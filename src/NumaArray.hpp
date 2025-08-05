@@ -1,7 +1,9 @@
 #pragma once
 #include "Partition.hpp"
 #include "omp.h"
+#if __has_include(<numa.h>)
 #include <numa.h>
+#endif
 #include <map>
 #include "Types.hpp"
 

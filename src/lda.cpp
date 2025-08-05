@@ -1,5 +1,7 @@
 #include "lda.hpp"
 
+#include <exception>
+
 void LDA::loadBinary(std::string fname)
 {
     if (!g.Load(fname))
